@@ -1,6 +1,16 @@
 = ParamStorage =
 
-A Max4Live device for quick snaphots and recalls of up to 8 devices on a grid of 8x8 buttons.
+A Max4Live device for quick snaphots and recalls of up to 8 devices on a
+grid of 8x8 buttons.
 
-Current flavour: 8x(64)
-Future flavours: 1x(64,32,16,8), Global(64,32,16,8), Global8x(64), Track(64,32,16,8)
+Developed under:
+ * Live 8.2
+ * Max 5.1.5(43290) incl. IOU up to 2010/11/13
+
+Current flavour: 
+ * 8x(64)
+Future flavours: 
+ * 1x(64,32,16,8)
+ * Global1x(64,32,16,8)
+ * Global8x(64)
+ * Track(64,32,16,8)

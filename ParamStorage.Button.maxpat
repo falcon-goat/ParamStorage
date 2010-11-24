@@ -21,6 +21,20 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"maxclass" : "message",
+					"text" : "name $1-bound_rownum",
+					"fontname" : "Arial Bold",
+					"id" : "obj-69",
+					"numinlets" : 2,
+					"fontsize" : 10.0,
+					"numoutlets" : 1,
+					"patching_rect" : [ 792.0, 172.0, 129.0, 16.0 ],
+					"outlettype" : [ "" ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "prepend :",
 					"fontname" : "Arial Bold",
@@ -135,30 +149,16 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "0",
-					"fontname" : "Arial Bold",
 					"bgcolor2" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"gradient" : 1,
+					"fontname" : "Arial Bold",
 					"id" : "obj-66",
 					"numinlets" : 2,
 					"fontsize" : 10.0,
 					"numoutlets" : 1,
+					"gradient" : 1,
 					"patching_rect" : [ 1024.0, 612.0, 32.5, 16.0 ],
 					"outlettype" : [ "" ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "print paramcount",
-					"fontname" : "Arial Bold",
-					"id" : "obj-26",
-					"numinlets" : 1,
-					"fontsize" : 10.0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1172.0, 736.0, 93.0, 18.0 ],
-					"color" : [ 0.266667, 0.215686, 1.0, 1.0 ]
 				}
 
 			}
@@ -578,13 +578,13 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "print #1-setvals",
+					"text" : "print setvals",
 					"fontname" : "Arial Bold",
 					"id" : "obj-22",
 					"numinlets" : 1,
 					"fontsize" : 10.0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1076.0, 896.0, 84.0, 18.0 ],
+					"patching_rect" : [ 1076.0, 896.0, 69.0, 18.0 ],
 					"color" : [ 0.266667, 0.215686, 1.0, 1.0 ]
 				}
 
@@ -649,13 +649,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "-1",
-					"fontname" : "Arial Bold",
 					"bgcolor2" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"gradient" : 1,
+					"fontname" : "Arial Bold",
 					"id" : "obj-70",
 					"numinlets" : 2,
 					"fontsize" : 10.0,
 					"numoutlets" : 1,
+					"gradient" : 1,
 					"patching_rect" : [ 672.0, 172.0, 32.5, 16.0 ],
 					"outlettype" : [ "" ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -837,20 +837,20 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "textbutton",
-					"ignoreclick" : 1,
-					"fontname" : "Arial Bold",
 					"bordercolor" : [ 0.6, 0.6, 0.6, 0.0 ],
+					"ignoreclick" : 1,
 					"bgovercolor" : [ 0.698039, 0.698039, 0.698039, 0.0 ],
+					"fontname" : "Arial Bold",
+					"borderoncolor" : [ 0.4, 0.4, 0.4, 0.0 ],
+					"bgoveroncolor" : [ 0.501961, 0.501961, 0.501961, 0.0 ],
 					"id" : "obj-42",
 					"numinlets" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 16.0, 16.0 ],
-					"borderoncolor" : [ 0.4, 0.4, 0.4, 0.0 ],
-					"bgoveroncolor" : [ 0.501961, 0.501961, 0.501961, 0.0 ],
+					"bgoncolor" : [ 0.54902, 0.54902, 0.54902, 0.0 ],
 					"fontsize" : 10.0,
 					"numoutlets" : 3,
 					"text" : "0",
 					"patching_rect" : [ 776.0, 300.0, 50.561523, 18.499023 ],
-					"bgoncolor" : [ 0.54902, 0.54902, 0.54902, 0.0 ],
 					"outlettype" : [ "", "", "int" ],
 					"bgcolor" : [ 0.74902, 0.74902, 0.74902, 0.0 ],
 					"presentation" : 1
@@ -1060,13 +1060,13 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "panel",
-					"angle" : 90.0,
-					"id" : "obj-9",
 					"grad1" : [ 0.478431, 0.709804, 0.317647, 0.501961 ],
+					"grad2" : [ 0.764706, 0.819608, 0.572549, 0.501961 ],
+					"id" : "obj-9",
 					"numinlets" : 1,
 					"mode" : 1,
+					"angle" : 90.0,
 					"border" : 1,
-					"grad2" : [ 0.764706, 0.819608, 0.572549, 0.501961 ],
 					"numoutlets" : 0,
 					"patching_rect" : [ 200.0, 520.0, 240.0, 200.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1367,13 +1367,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "0",
-					"fontname" : "Arial Bold",
 					"bgcolor2" : [ 0.407843, 0.360784, 0.043137, 1.0 ],
-					"gradient" : 1,
+					"fontname" : "Arial Bold",
 					"id" : "obj-39",
 					"numinlets" : 2,
 					"fontsize" : 10.0,
 					"numoutlets" : 1,
+					"gradient" : 1,
 					"patching_rect" : [ 524.0, 564.0, 33.0, 16.0 ],
 					"outlettype" : [ "" ]
 				}
@@ -1452,13 +1452,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "1",
-					"fontname" : "Arial Bold",
 					"bgcolor2" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"gradient" : 1,
+					"fontname" : "Arial Bold",
 					"id" : "obj-40",
 					"numinlets" : 2,
 					"fontsize" : 10.0,
 					"numoutlets" : 1,
+					"gradient" : 1,
 					"patching_rect" : [ 1132.0, 644.0, 32.5, 16.0 ],
 					"outlettype" : [ "" ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1538,13 +1538,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "set",
-					"fontname" : "Arial Bold",
 					"bgcolor2" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"gradient" : 1,
+					"fontname" : "Arial Bold",
 					"id" : "obj-41",
 					"numinlets" : 2,
 					"fontsize" : 10.0,
 					"numoutlets" : 1,
+					"gradient" : 1,
 					"patching_rect" : [ 1076.0, 644.0, 32.5, 16.0 ],
 					"outlettype" : [ "" ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1596,13 +1596,13 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "panel",
-					"angle" : 90.0,
-					"id" : "obj-31",
 					"grad1" : [ 0.678431, 0.819608, 0.819608, 0.501961 ],
+					"grad2" : [ 0.239216, 0.643137, 0.709804, 0.501961 ],
+					"id" : "obj-31",
 					"numinlets" : 1,
 					"mode" : 1,
+					"angle" : 90.0,
 					"border" : 1,
-					"grad2" : [ 0.239216, 0.643137, 0.709804, 0.501961 ],
 					"numoutlets" : 0,
 					"patching_rect" : [ 560.0, 792.0, 332.0, 56.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1612,13 +1612,13 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "panel",
-					"angle" : 90.0,
-					"id" : "obj-48",
 					"grad1" : [ 0.929412, 0.360784, 0.866667, 0.501961 ],
+					"grad2" : [ 0.592157, 0.278431, 0.486275, 0.501961 ],
+					"id" : "obj-48",
 					"numinlets" : 1,
 					"mode" : 1,
+					"angle" : 90.0,
 					"border" : 1,
-					"grad2" : [ 0.592157, 0.278431, 0.486275, 0.501961 ],
 					"numoutlets" : 0,
 					"patching_rect" : [ 1068.0, 612.0, 216.0, 204.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1673,10 +1673,10 @@
 					"varname" : "Button21",
 					"parameter_enable" : 1,
 					"id" : "obj-168",
+					"activebgoncolor" : [ 1.0, 0.392157, 0.0, 1.0 ],
 					"numinlets" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 15.0, 15.0 ],
 					"numoutlets" : 1,
-					"activebgoncolor" : [ 1.0, 0.392157, 0.0, 1.0 ],
 					"patching_rect" : [ 8.0, 684.0, 15.0, 15.0 ],
 					"outlettype" : [ "" ],
 					"presentation" : 1,
@@ -1780,6 +1780,16 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"source" : [ "obj-61", 0 ],
+					"destination" : [ "obj-22", 0 ],
+					"hidden" : 0,
+					"color" : [ 0.266667, 0.215686, 1.0, 1.0 ],
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"source" : [ "obj-1", 0 ],
 					"destination" : [ "obj-67", 0 ],
@@ -2588,15 +2598,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-11", 0 ],
-					"destination" : [ "obj-26", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-143", 0 ],
 					"destination" : [ "obj-45", 0 ],
 					"hidden" : 0,
@@ -2654,16 +2655,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-61", 0 ],
-					"destination" : [ "obj-22", 0 ],
-					"hidden" : 0,
-					"color" : [ 0.266667, 0.215686, 1.0, 1.0 ],
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-91", 0 ],
 					"destination" : [ "obj-55", 0 ],
 					"hidden" : 0,
@@ -2681,11 +2672,29 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-69", 0 ],
+					"destination" : [ "obj-56", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-1", 0 ],
+					"destination" : [ "obj-69", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
  ],
 		"parameters" : 		{
+			"obj-168" : [ "live.toggle[7]", "live.toggle[1]", 0 ],
 			"obj-91::obj-7" : [ "saved-ctrlvals", "Saved Control Values", 20 ],
-			"obj-56" : [ "#1-bound-rownum", "#1-bound-rownum", 0 ],
-			"obj-168" : [ "live.toggle[7]", "live.toggle[1]", 0 ]
+			"obj-56" : [ "#1-bound-rownum", "#1-bound-rownum", 0 ]
 		}
 
 	}

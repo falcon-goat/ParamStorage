@@ -28,3 +28,17 @@ Future flavours:
    device. The stored values seem to be overwritten multiple times at
    different places so the comparison results go wrong and stored data
    gets corrupted.
+
+ * INIT ORDER:
+   1) bottom-up
+     
+     a) [pattr].noparam (only stored in patcher, not in live_set !)
+     b) [loadbang] (defer doesn't change bang order)
+     c) [loadmess]
+
+   2) bottom-up / unordered ?
+     a) [pattr].param (@order: 0 increasing: 0,1,2,...)
+
+   3) bottom-up
+     a) [deferlow]ed [loadbang]
+
